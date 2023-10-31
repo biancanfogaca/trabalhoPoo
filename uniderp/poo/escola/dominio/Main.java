@@ -1,3 +1,4 @@
+package uniderp.poo.escola.dominio;
 import java.util.Scanner;
 
 public class Main {

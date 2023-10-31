@@ -1,4 +1,8 @@
-public class Rendimento{
+package uniderp.poo.escola.dominio;
+import java.util.List;
+import uniderp.poo.escola.dominio.Turma;
+
+public class RendimentoEscolar{
     private Aluno aluno;
     private Turma turma;
     private double nota1aProva;
@@ -7,7 +11,7 @@ public class Rendimento{
     private double mediaTrabalhos;
     private double mediaGeral;
 
-    public Rendimento(Aluno aluno, Turma turma, double nota1aProva, double nota2aProva, List<NotaTrabalho> trabalhos) {
+    public RendimentoEscolar(Aluno aluno, Turma turma, double nota1aProva, double nota2aProva, List<NotaTrabalho> trabalhos) {
         this.aluno = aluno;
         this.turma = turma;
         this.nota1aProva = nota1aProva;

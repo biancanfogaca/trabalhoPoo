@@ -1,5 +1,5 @@
 package uniderp.poo.escola.repositorio;
-
+import uniderp.poo.escola.dominio.Aluno;
 import uniderp.poo.escola.fakedb.AlunoFakeDB;
 
 public class AlunoRepositorio extends BaseGenericaCRUD<AlunoFakeDB, Aluno> {
@@ -35,10 +35,8 @@ public class AlunoRepositorio extends BaseGenericaCRUD<AlunoFakeDB, Aluno> {
         alvo.setDataInsercao(instancia.getDataInsercao());
         alvo.setDataMatricula(instancia.getDataMatricula());
         alvo.setDataNascimento(instancia.getDataNascimento());
-        alvo.setEndereco(instancia.getEndereco());
         alvo.setMatricula(instancia.getMatricula());
         alvo.setNome(instancia.getNome());
-        alvo.setRg(instancia.getRg());
         alvo.setNome(instancia.getNome());
         return alvo;
     }

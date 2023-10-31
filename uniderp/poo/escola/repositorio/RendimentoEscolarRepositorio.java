@@ -1,32 +1,31 @@
 package uniderp.poo.escola.repositorio;
 
-import uniderp.poo.escola.fakedb.ProfessorFakeDB;
+import uniderp.poo.escola.dominio.RendimentoEscolar;
+import uniderp.poo.escola.fakedb.RendimentoEscolarFakeDB;
 
-public class ProfessorRepositorio extends BaseGenericaCRUD<ProfessorFakeDB, Professor> {
+public abstract class RendimentoEscolarRepositorio extends BaseGenericaCRUD<RendimentoEscolarFakeDB, RendimentoEscolar> {
 
     @Override
-    public Professor Create(Professor instancia) {
+    public RendimentoEscolar Create(RendimentoEscolar instancia) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'Create'");
     }
 
     @Override
-    public Professor Read(int codigo) {
+    public RendimentoEscolar Read(int codigo) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'Read'");
     }
 
     @Override
-    public Professor Update(Professor instancia) {
+    public RendimentoEscolar Update(RendimentoEscolar instancia) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'Update'");
     }
 
     @Override
-    public Professor Delete(int codigo) {
+    public RendimentoEscolar Delete(int codigo) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'Delete'");
     }
-
-    
 }

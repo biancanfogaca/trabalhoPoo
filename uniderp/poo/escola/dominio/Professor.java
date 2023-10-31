@@ -1,18 +1,19 @@
+package uniderp.poo.escola.dominio;
 import java.util.Date;
 
-public class Aluno {
+public class Professor {
     private int codigo;
     private String nome;
+    private String cargo;
     private Date dataNascimento;
-    private int periodo;
     private String nomeUsuario;
     private String senha;
 
-    public Aluno(int codigo, String nome, Date dataNascimento, int periodo, String nomeUsuario, String senha) {
+    public Professor(int codigo, String nome, String cargo, Date dataNascimento, String nomeUsuario, String senha) {
         this.codigo = codigo;
         this.nome = nome;
+        this.cargo = cargo;
         this.dataNascimento = dataNascimento;
-        this.periodo = periodo;
         this.nomeUsuario = nomeUsuario;
         this.senha = senha;
     }
@@ -33,20 +34,20 @@ public class Aluno {
         this.nome = nome;
     }
 
+    public String getCargo() {
+        return cargo;
+    }
+
+    public void setCargo(String cargo) {
+        this.cargo = cargo;
+    }
+
     public Date getDataNascimento() {
         return dataNascimento;
     }
 
     public void setDataNascimento(Date dataNascimento) {
         this.dataNascimento = dataNascimento;
-    }
-
-    public int getPeriodo() {
-        return periodo;
-    }
-
-    public void setPeriodo(int periodo) {
-        this.periodo = periodo;
     }
 
     public String getNomeUsuario() {
@@ -64,6 +65,9 @@ public class Aluno {
     public void setSenha(String senha) {
         this.senha = senha;
     }
+
+    @Override
+    public String toString() {
+        return "Professor [codigo=" + codigo + ", nome=" + nome + "]";
+    }
 }
-
-
